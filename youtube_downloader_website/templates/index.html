@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>YouTube Video Converter</title>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='styles.css') }}"
+		/>
+	</head>
+	<body>
+		<h1>Convert YouTube Video to MP3 or MP4</h1>
+		<form method="post" action="/convert">
+			<label for="url">Enter YouTube video URL:</label>
+			<input type="text" id="url" name="url" />
+			<button type="submit" name="format" value="mp3">Convert to MP3</button>
+			<button type="submit" name="format" value="mp4">Convert to MP4</button>
+		</form>
+	</body>
+</html>
